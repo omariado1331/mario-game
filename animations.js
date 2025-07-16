@@ -44,4 +44,15 @@ export const createAnimations = (game) => {
     key: 'goomba-hurt',
     frames: [{ key: 'goomba', frame: 2 }]
   })
+
+  // animacion de la moneda
+  game.anims.create({
+    key: 'coin-idle',
+    frames: game.anims.generateFrameNumbers(
+      'coin',
+      { start: 0, end: 3 }
+    ),
+    frameRate: 6,
+    repeat: -1
+  })
 }
